@@ -135,13 +135,16 @@ p {
   padding: 30px;
   background-color: #e6e6e6;
 }
+.main_bot-card-title {
+  margin-bottom: 10px;
+}
 
 .imgimg {
   width: 100%;
 }
 
 h3 {
-  margin-top: 30px;
+  margin-top: 27px;
   margin-bottom: 20px;
 }
 
