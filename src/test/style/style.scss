@@ -5,6 +5,7 @@
 }
 
 body {
+  background-color: #f8f8f8;
   margin: 0;
 }
 
@@ -39,6 +40,10 @@ p {
   line-height: 0;
   &_right {
     display: flex;
+
+    &-go {
+      margin-right: 20px;
+    }
   }
 }
 .main {
@@ -93,6 +98,6 @@ p {
     font-weight: 700;
   }
   &_bot {
-    background-color: #dddddd;
+    background-color: #e6e6e6;
   }
 }

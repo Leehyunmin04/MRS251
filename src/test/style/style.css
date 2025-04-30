@@ -5,6 +5,7 @@
 }
 
 body {
+  background-color: #f8f8f8;
   margin: 0;
 }
 
@@ -42,6 +43,9 @@ p {
 }
 .nav_right {
   display: flex;
+}
+.nav_right-go {
+  margin-right: 20px;
 }
 
 .main {
@@ -94,5 +98,5 @@ p {
   font-weight: 700;
 }
 .main_bot {
-  background-color: #dddddd;
+  background-color: #e6e6e6;
 }
