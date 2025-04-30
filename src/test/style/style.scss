@@ -47,6 +47,7 @@ p {
   }
 }
 .main {
+  margin-bottom: 200px;
   margin-inline: 50px;
   &_top {
     padding-top: 100px;
@@ -60,6 +61,13 @@ p {
     grid-template-columns: 1fr 1fr;
     &-text {
       padding-right: 35px;
+      &-title {
+        // margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      &-text {
+        overflow: hidden;
+      }
     }
   }
   &_text1 {
@@ -78,6 +86,9 @@ p {
       background-color: #ffffff6c;
       padding-block: 30px;
       padding-inline: 50px;
+      &-title {
+        margin-bottom: 20px;
+      }
     }
     &-right {
       border-radius: 15px;
@@ -117,7 +128,8 @@ p {
     }
   }
   &_bot {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 50px;
     margin-top: 50px;
     &-card {
@@ -129,6 +141,10 @@ p {
 }
 .imgimg {
   width: 100%;
+}
+h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 h5 {

@@ -49,6 +49,7 @@ p {
 }
 
 .main {
+  margin-bottom: 200px;
   margin-inline: 50px;
 }
 .main_top {
@@ -62,6 +63,12 @@ p {
 }
 .main_hero-text {
   padding-right: 35px;
+}
+.main_hero-text-title {
+  margin-bottom: 20px;
+}
+.main_hero-text-text {
+  overflow: hidden;
 }
 .main_text1 {
   font-size: 60px;
@@ -80,6 +87,9 @@ p {
   background-color: rgba(255, 255, 255, 0.4235294118);
   padding-block: 30px;
   padding-inline: 50px;
+}
+.main_card-left-title {
+  margin-bottom: 20px;
 }
 .main_card-right {
   border-radius: 15px;
@@ -115,7 +125,8 @@ p {
   border-radius: 100px;
 }
 .main_bot {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   -moz-column-gap: 50px;
        column-gap: 50px;
   margin-top: 50px;
@@ -127,6 +138,11 @@ p {
 
 .imgimg {
   width: 100%;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 h5 {
