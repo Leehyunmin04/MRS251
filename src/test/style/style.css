@@ -1,41 +1,98 @@
 * {
   box-sizing: border-box;
-  margin: 0;
   display: block;
+  margin: 0;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  padding-inline: 60px;
-  padding-block: 20px;
-  margin-bottom: 100px;
-  box-shadow: 1px 6px 6px rgba(0, 0, 0, 0.3019607843);
-}
-.nav_left {
-  display: flex;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-  padding: 10px;
-}
-.nav_right {
-  padding: 10px;
-  display: flex;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-}
-
-.main {
-  padding-inline: 60px;
-  padding-bottom: 1000px;
-}
-.main_1 {
-  display: flex;
-  padding: 50px;
-  background-color: rgb(216, 216, 216);
+body {
+  margin: 0;
 }
 
 img {
   max-width: 100%;
-  width: 1000px;
+}
+
+p {
+  margin: 0;
+}
+
+.back {
+  position: absolute;
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 50%;
+  width: 100%;
+}
+.back_img {
+  width: 100%;
+}
+
+.nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  margin-block: 20px;
+  margin-inline: 50px;
+  padding-inline: 50px;
+  padding-block: 30px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 0;
+}
+.nav_right {
+  display: flex;
+}
+
+.main {
+  margin-inline: 50px;
+}
+.main_top {
+  padding-top: 100px;
+  border: solid 2.2px #fff;
+}
+.main_hero {
+  margin-inline: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main_hero-text {
+  padding-right: 35px;
+}
+.main_text1 {
+  font-size: 60px;
+  padding: 50px;
+}
+.main_card {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-inline: 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main_card-left {
+  border-radius: 15px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.4235294118);
+  padding-block: 30px;
+  padding-inline: 50px;
+}
+.main_card-right {
+  border-radius: 15px;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.4235294118);
+  padding-block: 30px;
+  padding-inline: 50px;
+}
+.main_home {
+  font-size: 1000px;
+  margin-inline: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.main_bot {
+  background-color: #dddddd;
 }

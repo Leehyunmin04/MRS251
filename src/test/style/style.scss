@@ -1,40 +1,98 @@
 * {
   box-sizing: border-box;
-  margin: 0;
   display: block;
-}
-.nav {
-  display: flex;
-  justify-content: space-between;
-  padding-inline: 60px;
-  padding-block: 20px;
-  margin-bottom: 100px;
-  // background-color: rgb(228, 228, 228);
-  box-shadow: 1px 6px 6px #0000004d;
-  &_left {
-    display: flex;
-    column-gap: 30px;
-    // background-color: aquamarine;
-    padding: 10px;
-  }
-  &_right {
-    padding: 10px;
-    display: flex;
-    column-gap: 30px;
-    // background-color: aquamarine;
-  }
+  margin: 0;
 }
 
-.main {
-  padding-inline: 60px;
-  padding-bottom: 1000px;
-  &_1 {
-    display: flex;
-    padding: 50px;
-    background-color: rgb(216, 216, 216);
-  }
+body {
+  margin: 0;
 }
+
 img {
   max-width: 100%;
-  width: 1000px;
+}
+p {
+  margin: 0;
+}
+
+.back {
+  position: absolute;
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 50%;
+  width: 100%;
+  &_img {
+    width: 100%;
+  }
+}
+.nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  margin-block: 20px;
+  margin-inline: 50px;
+  padding-inline: 50px;
+  padding-block: 30px;
+  display: flex;
+  justify-content: space-between;
+  line-height: 0;
+  &_right {
+    display: flex;
+  }
+}
+.main {
+  margin-inline: 50px;
+  &_top {
+    padding-top: 100px;
+    border: solid 2.2px #fff;
+  }
+  &_hero {
+    // background-color: #fff;
+    // margin-block: 20px;
+    margin-inline: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &-text {
+      padding-right: 35px;
+    }
+  }
+  &_text1 {
+    font-size: 60px;
+    padding: 50px;
+  }
+  &_card {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-inline: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &-left {
+      border-radius: 15px;
+      margin: 10px;
+      background-color: #ffffff6c;
+      padding-block: 30px;
+      padding-inline: 50px;
+    }
+    &-right {
+      border-radius: 15px;
+
+      margin: 10px;
+      background-color: #ffffff6c;
+      padding-block: 30px;
+      padding-inline: 50px;
+    }
+  }
+  &_home {
+    font-size: 1000px;
+    margin-inline: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+  &_bot {
+    background-color: #dddddd;
+  }
 }
